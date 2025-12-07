@@ -9,6 +9,7 @@ import ProjectsSection from "./components/ProjectsSection";
 import Footer from "./components/Footer";
 import AchievementsSection from "./components/AchievementsSection";
 import CertificateSection from "./components/CertificationSection";
+import ContactSection from "./components/ContactSection";
 
 import Box from "@mui/material/Box";
 import SpeedDial from "@mui/material/SpeedDial";
@@ -113,6 +114,8 @@ export default function Home() {
         <AboutSection />
         <ProjectsSection />
         <CertificateSection />
+        <div className="mt-16"></div>
+        <ContactSection />
 
       </div>
       <Footer />
