@@ -230,7 +230,7 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4 dark:text-gray-900">About Me</h2>
           <p className="text-base lg:text-lg dark:text-gray-900 mb-4">
-            I&apos;m a passionate Full-Stack Web Developer specializing in React.js and Node.js with MongoDB. I&apos;ve built projects like CouponSwap and BrewBank, focusing on scalable, user-friendly applications.
+            I&apos;m a passionate Full-Stack Web Developer specializing in React.js and Node.js with MongoDB. I&apos;ve built projects like CouponSwap and BrewBank, focusing on scalable, user-friendly applications. 
           </p>
           <p className="text-base lg:text-lg dark:text-gray-900 mb-4">
             My skills include JavaScript, React.js, Node.js, MongoDB, MySQL, Express.js, RESTful APIs, Tailwind CSS, HTML, CSS, and Git/GitHub, plus UI/UX design with Figma.
