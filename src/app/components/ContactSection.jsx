@@ -26,7 +26,7 @@ const ContactSection = () => {
       <div className="max-w-2xl mx-auto text-center">
         <h2 className="text-4xl font-bold text-white mb-4 dark:text-gray-900">Contact Me</h2>
         <p className="text-base lg:text-lg text-white mb-8 dark:text-gray-900">
-          I'm always open to discussing new opportunities, collaborations, or just having a chat about technology and development. Feel free to reach out!
+          I&apos;m always open to discussing new opportunities, collaborations, or just having a chat about technology and development. Feel free to reach out!
         </p>
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
