@@ -239,7 +239,7 @@ const AboutSection = () => {
             I excel at solving problems, optimizing performance, and ensuring security and scalability in my solutions.
           </p>
           <p className="text-base lg:text-lg dark:text-gray-900 mb-6">
-            Currently honing skills under Neel Sir's mentorship at Coding Gita BootCamp.
+            Currently honing skills under Neel Sir&apos;s mentorship at Coding Gita BootCamp.
           </p>
           <div className="flex flex-row justify-start mt-8 gap-2 flex-wrap">
             <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>
