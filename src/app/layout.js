@@ -54,6 +54,8 @@ export default function RootLayout({ children }) {
         <meta property="og:description" content={metadata.description} />
         <meta name="author" content="NageshJagtap" />
         <meta name="robots" content="index, follow"/>
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/next.svg" type="image/svg+xml" />
 
       </Head>
 
