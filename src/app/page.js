@@ -74,34 +74,34 @@ export default function Home() {
     document.cookie = `${name}=${value};${expires};path=/`;
   }
 
-  // Track visit function
-  async function trackVisit() {
-    let userId = getCookie('user_id');
-    if (!userId) {
-      userId = generateUUID();  // Generate a new unique ID
-      setCookie('user_id', userId, 365);  // Store for 1 year
-    }
-
-    // Send visit data to the backend
-    try {
-      const response = await fetch('', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ userId, timestamp: new Date() }),
-      });
-      const data = await response.json();
-      console.log("Visit data sent to server", data);
-    } catch (error) {
-      console.error("Error tracking visit:", error);
-    }
-
-    console.log("Tracking user with ID: ", userId);
-  }
-
-  // Call this on page load to track visit
+  // Track visit on page load
   useEffect(() => {
+    async function trackVisit() {
+      let userId = getCookie('user_id');
+      if (!userId) {
+        userId = generateUUID(); // Generate a new unique ID
+        setCookie('user_id', userId, 365); // Store for 1 year
+      }
+
+      // Send visit data to the backend
+      try {
+        const response = await fetch('', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ userId, timestamp: new Date() }),
+        });
+        // If your backend returns JSON, uncomment next line
+        // const data = await response.json();
+        // console.log("Visit data sent to server", data);
+      } catch (error) {
+        console.error("Error tracking visit:", error);
+      }
+
+      console.log("Tracking user with ID: ", userId);
+    }
+
     trackVisit();
   }, []);
 
